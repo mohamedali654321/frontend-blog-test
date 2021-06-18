@@ -1,0 +1,404 @@
+.container{
+padding: 130px 0 0;
+
+}
+
+.container .maxWidth{
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.maxWidth .triangle{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+
+}
+
+.triangle .triangle-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+
+}
+
+.triangle-wrapper .dots{
+    margin-top: 30px;
+    display: block;
+    max-width: 140px;
+}
+
+.dots .ratio{
+    padding-bottom: 31%;
+    position: relative;
+    width: 100%;
+}
+
+.dots .ratio img{
+    opacity: 1;
+    visibility: inherit;
+}
+.dots .ratio .Img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+
+}
+
+.triangle-wrapper .image{
+    transform: rotate(0);
+    width: 100%;
+    height: 100%;
+
+}
+
+.image .ratio{
+
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.image .ratio .Img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.maxWidth .wrapper{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 83%;
+    max-width: 1200px;
+    z-index: 1;
+}
+
+.wrapper .innerWrapper{
+    max-width: 980px;
+    width: 82%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.innerWrapper .title{
+opacity: 1;
+text-align: center;
+position: relative;
+margin: 0 auto 40px;
+transform: translateZ(0);
+width: 100%;
+
+}
+
+.innerWrapper .title .label{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 43px;
+    line-height: 1.19;
+    transform: translateZ(1000px);
+    position: relative;
+
+}
+.innerWrapper .title .label .text{
+     top: -90px;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0px, 0px, 0px);
+    will-change: opacity,transform;
+    text-align: center;
+    color: #6514a0;
+    font-weight: bolder;
+    line-height: 56px;
+    font-size: 43px;
+
+}
+
+
+.articles{
+    position: relative;
+    background-color: #f2f4ff;
+    transform: translateZ(0);
+    
+}
+
+.articles::before{
+    height: 200px;
+    top: 0;
+    transform: translateY(-100%);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(#fff,#f2f4ff);
+    z-index: -2;
+
+}
+
+.articles::after{
+    height: 400px;
+    bottom: 0;
+    transform: translateY(100%) scaleY(-1);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(#fff,#f2f4ff);
+    z-index: -2;
+}
+
+.articles .maxWidth{
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+
+}
+
+.articles .maxWidth .styles-wrapper{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 83%;
+    max-width: 1200px;
+    z-index: 1;
+
+}
+
+.articles .maxWidth .styles-wrapper .innerWrapper{
+    max-width: 980px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 82%;
+}
+
+.articles .tagResault{
+    display: flex;
+    align-items: flex-end;
+    /* margin: 20px -90px 50px; */
+    width: 1030px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+.tagResault .tagsWrapper{
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.tagResault  .text{
+    font-size: 15px;
+    line-height: 22px;
+    text-align-last: right;
+    margin: 0 0 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    color: #9f4fd8;
+}
+
+.articles .cardsGrid{
+    opacity: 0;
+    grid-gap: 24px;
+    grid-template-columns: repeat(3,minmax(25%,1fr));
+    margin: 85px 0 0;
+    width: 1050px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+    position: relative;
+    transform: translateZ(0);
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: CardAnimation  ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards ;
+    animation-delay: .5s;
+    
+
+}
+
+@keyframes CardAnimation{
+    0%{
+        opacity: 0;
+        transform: translateZ(-1000px) translateX(-1000px);
+      
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(1000px) translateX(0);
+        
+    }
+
+}
+
+
+
+
+/* .articles .buttonContainer{
+    max-width: 1440px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    transform: translateZ(1000px);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+
+
+} */
+
+.articles .buttonContainer{
+    opacity: 1; 
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+
+.buttonContainer .styles-button{
+    background-color: transparent;
+    color: #9f4fd8;
+    width: auto;
+    position: relative;
+    display: inline-block;
+    transform: translateZ(900px);
+    
+    
+    
+    
+   
+    
+    
+}
+
+.buttonContainer .styles-button .shadow{
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 4px rgb(26 26 67 / 10%);
+    border-radius: 8px;
+}
+
+.buttonContainer .styles-button .background{
+    transform: perspective(800px);
+    background-color: #fff;
+    color: #4e6294;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 4px rgb(26 26 67 / 10%);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: border .2s ease;
+    box-sizing: border-box;
+    border-radius: 8px;
+    
+
+}
+.buttonContainer .styles-button .background .hoverCircle{
+    opacity: 0;
+    transform: perspective(15px) translate3d(0px, 0px, -90px);
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.1);
+    
+
+}
+.buttonContainer .styles-button:hover {
+
+    transform: perspective(150px) translate3d(0px,0px,6px);
+}
+
+
+
+
+.buttonContainer .styles-button .buttonLink{
+    text-transform: uppercase;
+    color: inherit;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    padding: 18px 40px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transform: translateZ(1000px);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.buttonLink .svgStyle{
+    width: 10px;
+    transform: rotate(90deg);
+    margin-left: 10px;
+    margin-right: -10px;
+    transform-origin: center;
+    overflow: hidden;
+    fill: none;
+
+}

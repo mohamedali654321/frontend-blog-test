@@ -1,0 +1,171 @@
+.BannerContainer{
+    margin-top: 84px;
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    padding: 135px 0;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BannerContainer .BannerWrapper{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* background-color: #1d1b84; */
+    background-color: #6e1fa7;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    z-index: 1;
+
+}
+
+.BannerContainer .BannerWrapper::after{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(https://strapi.io/assets/newsletter-background.svg);
+    z-index: -1;
+}
+
+
+.BannerContainer .BannerWrapper .BannerContent{
+    width: 50%;
+    margin-bottom: 0;
+    padding-right: 100px;
+    box-sizing: border-box;
+
+}
+
+.BannerContent .BannerTitle{
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.BannerContent .BannerText{
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.BannerWrapper .BannerForm{
+    justify-content: flex-end;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+
+.BannerForm .BannerInput{
+    max-width: 275px;
+    margin-bottom: 0;
+    display: flex;
+    flex: 1 1;
+    margin-right: 8px;
+    border: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px rgb(26 26 67 / 10%);
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000;
+    font-size: 13px;
+    height: 50px;
+}
+
+
+
+.BannerForm .BannerButtonContainer{
+    
+    background-color: transparent;
+    color: #fff;
+    width: auto;
+    position: relative;
+    display: inline-block;
+    transform: translateZ(900px);
+    transform: perspective(800px) ;
+    transition: .5s cubic-bezier(0.2, 0.82, 0.2, 1) ease-in-out;
+
+}
+
+.BannerForm .BannerButtonContainer:hover {
+    
+    transform: perspective(150px) translate3d(0px, 0px, 10px);
+}
+
+.BannerBgBtn{
+    transform: perspective(800px);
+    background-color: #8c4bff;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 4px rgb(26 26 67 / 10%);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: border .2s ease;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+
+}
+
+.BannerBgBtn .hoverCircle{
+    opacity: 0;
+    transform: perspective(15px) translate3d(0px, 0px, -90px);
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.1);
+
+}
+
+.BannerForm .BannerBtnLink{
+    padding: 18px 16px;
+    color: inherit;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    padding: 18px 30px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transform: translateZ(1000px);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+}
+

@@ -1,0 +1,499 @@
+.Header{
+    position: fixed;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 100;
+    transition: 1s cubic-bezier(0.2, 0.82, 0.2, 1);
+    top: 0;
+    left: 0;
+ 
+    
+    
+}
+.HeaderScrolled{
+        opacity: 1;
+        padding: 15px 0;
+        backdrop-filter: blur(25px);
+        justify-items: flex-end;
+        background: #8D1CB8;
+       
+}
+
+.HeaderScrolled a{
+    color: white !important;
+}
+
+.HeaderScrolled a:hover{
+    color: white !important;
+}
+
+
+
+
+.HeaderGroup a:hover{
+    color: #8533ff ;
+}
+
+
+.visible{
+    visibility: hidden;
+}
+
+.HeaderScrolled .cool::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff !important;
+    transition: width .3s;
+}
+
+
+.HomeHeader{
+    opacity: 1;
+        padding: 15px 0;
+        backdrop-filter: blur(25px);
+        justify-items: flex-end;
+        
+}
+
+
+.HomeHeader a{
+    color: white !important;
+}
+
+.HomeHeader a:hover{
+    color: white !important;
+}
+
+.HomeHeader .cool::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff !important;
+    transition: width .3s;
+}
+
+
+
+
+.HeaderGroup{
+    margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 0;
+    transform: translateZ(1000px);
+    width: 100%;
+    max-width: 1200px;
+    z-index: 1;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: HeaderAnimation cubic-bezier(0.2, 0.82, 0.2, 1) ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards ;
+    animation-delay: 0.5s;
+}
+
+.HeaderGroup img{
+    display: block;
+    width: auto;
+    height: 35px;
+    
+
+}
+
+.HeaderScrolled .btn{
+
+    background-color: #fff;
+    color: #1d1b84;
+    white-space: nowrap;
+    display: block;
+    border-radius: 8px;
+    transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform: perspective(800px) translate3d(0px,0px,43px);
+}
+
+.HeaderGroup .btn{
+
+    background-color: #fff;
+    color: #1d1b84;
+    white-space: nowrap;
+    display: block;
+    border-radius: 8px;
+    transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform: perspective(800px) translate3d(0px,0px,43px);
+}
+
+.HeaderGroup .headerLinks{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0 auto;
+flex: 1 1;
+
+list-style: none;
+
+}
+
+.HeaderGroup .navigation{
+display: flex;
+align-items: center;
+height: 55px;
+}
+
+
+
+
+
+.HeaderGroup a{
+    color: #740ac0;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+/* .HeaderGroup a:hover{
+    transform: scale(1.2) translateY(-5px);
+  
+    
+} */
+
+
+ .cool::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #1d1b84;
+    transition: width .3s;
+}
+
+.cool:hover::after{
+    width: 100%;
+    transition: width .3s;
+    background: #8533ff;
+}
+
+
+
+@media(max-width:640px){
+.Header{
+    padding: 15px 0;
+}
+.HeaderGroup {
+    grid-template-columns: repeat(4,auto);
+}
+
+.Header a:nth-child(4){
+    display: none;
+}
+
+}
+
+@keyframes HeaderAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+ .panelBackgroundWrapper{
+    height: 457px;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    border-radius: 20px;
+    transform: translateZ(-100px);
+    
+}
+
+.panelBackgroundWrapper .panelBackgroundContainer{
+    height: 457px;
+    transform-origin: 50% 50%;
+    transform: perspective(800px);
+    position: absolute;
+    width: calc(100% + 32px);
+    top: 0;
+    left: -16px;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    box-shadow: 0 -8px 15px rgb(28 27 126 / 10%);
+    
+}
+
+.panelBackgroundWrapper .panelBackgroundContainer .panelBackground{
+    opacity: 1;
+    transform-origin: 50% 0%;
+    transform: translate(0px, 393.391px);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 -8px 15px rgb(28 27 126 / 10%);
+    overflow: hidden;
+}
+.panelBackgroundWrapper .panelBackgroundContainer .panelBackground .panelBackgroundGradient{
+    transform: translate(0px, 0px);
+    width: 550px;
+    left: 0;
+    border-right: 1px solid #e7edf1;
+    background: linear-gradient(
+      269deg
+      ,#f9faff -5.1%,hsla(0,0%,100%,0) 55.32%);
+      
+
+
+}
+
+
+
+.HeaderGroup .links{
+    display: flex;
+    flex-direction: row;
+    
+    flex: 1 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    list-style: none;
+    justify-content: space-between;
+    justify-items: center;
+    padding-right: 40px;
+
+}
+
+
+.links .NavigationLabel{
+    padding: 0 9px;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    text-align: -webkit-match-parent;
+    transition: color .4s ease;
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.ToggleContainer{
+  position: relative;
+  margin-left: 20px;
+  
+  font-weight: bold;
+  font-size: 18px;
+}
+
+ .en{
+    color: #c47ef7;
+    position: absolute;
+   margin-top: 10px;
+    margin-left: -20px;
+}
+
+ .ar{
+    color: #740ac0;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -7px;
+}
+
+
+.HeaderGroup .check{
+    appearance: none;
+    width: 50px;
+    height: 23px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 5px #ccc;
+    transition: .4s;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    
+    
+    
+}
+
+.HeaderGroup .check:checked{
+    background-color: #740ac0;
+    
+}
+
+.HeaderGroup .check::after{
+    content: '';
+    display: block;
+    border: 1px solid #ccc;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #740ac0;
+    transform: scale(1.1);
+    transition:all .4s ease-in-out;
+    box-shadow: 2px 2px 4px #ccc;
+}
+
+.HeaderGroup .check:checked::after{
+
+   transform: translateX(100%) scale(1.1);
+   background-color: #fff;
+   
+  
+}
+
+.HeaderScrolled  .ar{
+    color: #fff !important;
+}
+
+.HeaderScrolled  .en{
+    color: #fff !important;
+}
+
+.HeaderScrolled .check:checked{
+    background-color: #fff;
+}
+
+.HeaderScrolled .check::after{
+    content: '';
+    display: block;
+    border: 1px solid #ccc;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #740ac0;
+    transform: scale(1.1);
+    transition:all .4s ease-in-out;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+.HeaderScrolled .check{
+    appearance: none ;
+    width: 70px;
+    height: 33px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 2px #ccc;
+    transition: .4s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    position: relative;
+    background-color:#fff ;
+    
+}
+
+
+
+
+
+
+
+.switch-container {
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+  
+  }
+  
+  .switch-color {
+    width: 70px;
+    height: 30px;
+    left: 5px;
+    top: 5px;
+    background: #cfd8dc;
+    border-radius: 50px;
+    z-index: -1;
+    position: absolute;
+    transition: all 500ms cubic-bezier(0.34, 1.36, 0.2, 1);
+  
+  
+  }
+  
+  label {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: 2px 2px 2px 2px #ebeef0;
+    z-index: 99;
+    cursor: pointer;
+  }
+  
+  label::before {
+    
+    font-weight: 700;
+    font-size: 14px;
+    content: "AR";
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    color: #6514a0;
+  }
+  
+ label::after {
+   
+    font-weight: 700;
+    font-size: 14px;
+    content: "EN";
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    opacity: 0;
+    color: #6514a0;
+  }
+  
+   #switch:checked ~ label::before {
+    opacity: 0;
+  }
+  
+ #switch:checked ~ label::after {
+    opacity: 1;
+  }
+  
+  #switch:checked ~ label {
+    transform: translatex(2em) rotatez(360deg);
+  }
+  
+ #switch:checked ~ .switch-color {
+    background: #6514a0;
+  }
+  
+ #switch ~ label {
+    transition: all 1s cubic-bezier(0.34, 1.36, 0.2, 1);
+  }
+  
+   input {
+    display: none;
+
+    
+  }
+  

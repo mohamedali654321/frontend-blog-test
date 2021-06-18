@@ -1,0 +1,491 @@
+.cardContainer{
+
+    position: relative;
+    display: flex;
+    transform: translateZ(1000px);
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+
+}
+
+.cardContainer .cardArrowLink{
+    opacity: 1;
+    transform: perspective(1000px);
+    display: block;
+    position: relative;
+    width: 100%;
+    text-decoration: none;
+    backface-visibility: hidden;
+    list-style: none;
+    color: -webkit-link;
+    cursor: pointer;
+    transition: .4s cubic-bezier(0.2, 0.8, 0.2, 1) ;
+
+}
+
+.cardContainer .cardArrowLink:hover{
+
+    transform: scale(1.03,1.03);
+}
+
+.cardContainer .cardArrowLink .card-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-bg .background{
+    transform: perspective(100px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 8%);
+    transition: .4s cubic-bezier(0.2, 0.8, 0.2, 1) ;
+
+}
+
+/* .card-bg .background:hover{
+transform: perspective(100px) scale(1.03 , 1.03) !important;
+
+} */
+
+
+.cardContainer .cardArrowLink .card-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+.card-content .imageCoverContainerH{
+    transform: translate(0px, 0px);
+    transform-origin: bottom;
+    position: relative;
+    width: 100%;
+    
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #d8d8d8;
+    will-change: transform;
+    transition: .4s cubic-bezier(0.2, 0.8, 0.2, 1) ;
+
+}
+/* .card-content .imageCoverContainer:hover{
+    transform: scale(1.03,1.03);
+} */
+
+.imageCoverContainerH:hover .image-coverH{
+
+    transform: scale(1.03,1.03);
+}
+
+.cardContainer .cardArrowLink:hover .ImgH{
+    filter: brightness(130%);
+}
+
+
+.imageCoverContainerH .image-coverH{
+    transform: scale(1.04, 1.04);
+    width: 100%;
+    will-change: transform;
+    transition: .4s cubic-bezier(0.2, 0.8, 0.2, 1) ;
+}
+
+/* .imageCoverContainer .image-cover:hover{
+    transform: scale(1.01,1.01);
+} */
+
+.imageCoverContainerH .image-coverH .ratioH{
+    padding-bottom: 56.25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: #e7edf1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-coverH .ratioH .childH{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.childH .CoverImgH{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+
+}
+
+.childH .CoverImg .CoverRatioH{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.CoverRatioH .ImgH{
+    opacity: 1;
+    visibility: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 330px;
+    height: 190px; */
+     /* object-position: center; */
+    /* object-fit: cover;  */
+    width: 99%;
+    height: 99%;
+
+}
+
+
+/* .ImgH{
+    opacity: 1;
+    visibility: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    object-position: center;
+    object-fit: cover;
+
+} */
+
+.card-content .content{
+display: flex;
+flex: 1 1;
+
+}
+ 
+
+.content .listCardContent{
+    text-align: left;
+    position: relative;
+    display: flex;
+    transform: translateZ(1000px);
+    width: 100%;   
+    justify-content: flex-start;
+    flex-direction: column;
+    left: -100px;
+    
+
+
+}
+
+
+.listCardContent .tags{
+
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 14px;
+    text-decoration: none;
+    padding-top: 20px;
+   
+    
+}
+
+.listCardContent .tags .Tag{
+    display: inline-block;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 10px;
+    color: #13bb70;
+    
+}
+
+.listCardContent h2{
+    position: relative;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #740ac0;
+    font-size: 17px;
+    line-height: 1.5;
+    /* width: 300px; */
+}
+
+.listCardContent p{
+    display: -webkit-box;
+    position: relative;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #4e6294;
+    /* width: 300px; */
+    
+}
+
+.listCardContent .author{
+    
+    display: flex;
+    
+    text-decoration: none;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    margin-right: 30px;
+
+}
+
+.listCardContent .author .name{
+    font-size: 13px;
+    line-height: 19px;
+    color: #740ac0;
+}
+.listCardContent .author .date{
+    margin-top: -10px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #683d86;
+
+}
+
+.listCardContent .author .translate{
+    margin-top: -10px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #740ac0;
+}
+
+.defaultCat{
+    color: rgb(218, 214, 214);
+    position: relative;
+    font-size: 11px;
+    text-align: center;
+    /* margin-top: 5px; */
+    text-transform: uppercase;
+    font-weight: 500;
+    filter: blur(.4px);
+    margin-right: 5px;
+}
+
+.defaultTitle{
+    color: rgb(252, 248, 248);
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 27%;
+    filter: blur(.4px);
+    top: -30px;
+    
+}
+
+.voting{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px ;
+   
+    margin-left: 10%;
+    margin-right: 10%;
+    bottom: 0;
+    overflow: hidden;
+    
+     
+     
+
+   
+}
+
+.likeCount{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #8d38ca;
+   text-align: center;
+    padding: 5px;
+    color: #fff;
+    font-size: 13px;
+   
+   
+}
+
+.voting button{
+
+    background: none;
+    border: none;
+    color: #740ac0 ;
+    font-size: 19px;
+    padding: 0 15px;
+    cursor: pointer;
+
+}
+
+.voting button:active{
+    transform: scale(1.1);
+}
+
+.CourseCard{
+
+    position: relative;
+    width: 74px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    margin: 10px auto 0px auto;
+    left: -20px;
+
+}
+
+
+.CourseCard .likeButton{
+    width: 32px;
+    height: 32px;
+    background: rgba(191, 101, 233, 0.2);
+    border-radius: 30px;
+    padding: 4px;
+    cursor: pointer;
+    border: none;
+   margin-bottom: 10px;
+   transition: all 0.8s cubic-bezier(0.2, 0.82, 0.2, 1) ;
+}
+
+.CourseCard .likeButton:hover{
+    transform: scale(1.2);
+}
+
+.CourseCard .likeButton img{
+    margin: auto;
+    max-width: 100%;
+    padding: 3px;
+    border-style: none;
+}
+
+
+.CourseCard .dislikeButton{
+    width: 32px;
+    height: 32px;
+    background: rgba(191, 101, 233, 0.2);
+    border-radius: 30px;
+    padding: 4px;
+    cursor: pointer;
+    border: none;
+   margin-bottom: 10px;
+   transition: all 0.8s cubic-bezier(0.2, 0.82, 0.2, 1) ;
+}
+
+.CourseCard .dislikeButton:hover{
+    transform: scale(1.2);
+}
+
+
+.CourseCard .dislikeButton img{
+    margin: auto;
+    max-width: 100%;
+    padding: 3px;
+    border-style: none;
+    transform: rotate(-180deg);
+    
+}
+
+
+.listCardContent .styles_tags{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 14px;
+    /* text-decoration: none; */
+    list-style: none;
+    text-align: left; 
+    margin-left: -40px;
+  
+
+}
+.listCardContent .styles_tags .style_tag{
+    position: relative;
+    padding-right: 15px;
+   display: inline-block;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 10px;
+    color: #13bb70;
+ 
+    
+}
+
+.styles_tags .style_tag:not(:last-child):after{
+    content: ".";
+    position: relative;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #13bb70;
+    
+}
+
+.Tag{
+    width: 100%;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 10px;
+    color: #13bb70;
+    
+}
+
+.abstract{
+    font-size: 11px !important;
+}
+
+
+.defLi{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: -15px;
+   
+}
+
+
+
+
+.defUl{
+    text-decoration: none;
+    margin-right: 30px;
+    text-align: center;
+    position: relative;
+   
+    
+}
+
+/* .defUl .defLi:not(:last-child):after{
+    content: ".";
+    color: #fff;
+    position: relative;
+    left: -10px;
+} */
+

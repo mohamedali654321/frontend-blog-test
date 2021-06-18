@@ -1,0 +1,114 @@
+.containers{
+    position: relative;
+    
+    
+}
+
+.featuresHero{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.featuresHero .heroContainer{
+    position: relative;
+    margin: 150px 0 0;
+
+}
+@media (min-width: 992px) {
+    .featuresHero .heroContainer {
+      margin: 150px 0 250px;
+    }
+  }
+
+
+ .heroContainer .featureMaxWidth{
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+ }
+
+ .featureMaxWidth .heroWrapper{
+    padding-top: 80px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+    width: 83.3333333333%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+ }
+
+ .heroWrapper .InnerHeroWrapper{
+    width: inherit;
+    max-width: 980px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ @media (min-width: 992px) {
+    .heroWrapper .InnerHeroWrapper{
+        width: inherit;
+    max-width: inherit;
+   
+
+    }
+ }
+
+
+ .InnerHeroWrapper .heroLabelTitle{
+    opacity: 1;
+    max-width: 370px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+ }
+
+ .typography_Label{
+   margin-bottom: 40px;
+   text-align: left;
+    transform: translateZ(1000px);
+    font-size: 13px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: Poppins,serif;
+    color: #8c4bff;
+ }
+
+ .typography_Label .featureLabel{
+   position: relative;
+   display: inline-block;
+   opacity: 1;
+   transform: perspective(1000px) translate3d(0px, 0px, 0px);
+   will-change: opacity,transform;
+ }
+
+ .typography_Title{
+   font-size: 53px;
+   position: relative;
+    margin-bottom: 35px;
+    text-align: left;
+    transform: translateZ(1000px);
+    font-weight: 900;
+    line-height: 56px;
+    font-family: Poppins,serif;
+    color: #480fac;
+    position: relative;
+
+ }
+
+ .typography_Title .typography_TitleContainer{
+   position: relative;
+   display: inline-block;
+   opacity: 1;
+   transform: perspective(1000px) translate3d(0px, 0px, 0px);
+   will-change: opacity,transform;
+   text-align: left;
+ }

@@ -1,0 +1,30 @@
+.scrollContainer{
+    position: relative;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    height: 45px;
+    width: 45px;
+    /* background : url('https://image.flaticon.com/icons/png/512/481/481155.png'); */
+    background: url(up.svg);
+    background-color: #530a86;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    
+}
+
+.scrollTop.active{
+    bottom: 40px;
+    opacity: 1;
+    visibility: visible;
+}

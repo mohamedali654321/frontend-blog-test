@@ -1,0 +1,51 @@
+<svg width="840" height="138" viewBox="0 0 840 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.2">
+<rect x="69.2009" y="0.00012207" width="69.2" height="69.2" fill="#1B0255"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="69" y="0" width="70" height="70">
+<rect x="69.2009" y="0.00012207" width="69.2" height="69.2" fill="#1B0255"/>
+</mask>
+<g mask="url(#mask0)">
+<circle cx="69.2017" cy="69.2" r="69.2" fill="#482D9E"/>
+</g>
+<rect width="69.2" height="69.2" transform="matrix(-1 0 0 1 69.2009 69.2003)" fill="#1B0255"/>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="69" width="70" height="70">
+<rect width="69.2" height="69.2" transform="matrix(-1 0 0 1 69.2009 69.2003)" fill="#1B0255"/>
+</mask>
+<g mask="url(#mask1)">
+<circle r="69.2" transform="matrix(-1 0 0 1 69.1997 138.4)" fill="#4700C9"/>
+</g>
+<rect x="276.801" y="69.2003" width="69.2" height="69.2" fill="#482D9E"/>
+<path d="M346.001 69.2003V138.4H276.801L346.001 69.2003Z" fill="#1B0255"/>
+<g opacity="0.4">
+<rect width="69.2" height="69.2" transform="matrix(-1 0 0 1 207.603 69.2003)" fill="#886DFF"/>
+<rect width="34.6" height="34.6" transform="matrix(-1 0 0 1 207.603 103.801)" fill="#1B0255"/>
+</g>
+<g opacity="0.4">
+<rect width="69.2" height="69.2" transform="matrix(1 0 0 -1 208.562 69.2003)" fill="#886DFF"/>
+<rect width="34.6" height="34.6" transform="matrix(1 0 0 -1 208.563 34.6008)" fill="#1B0255"/>
+</g>
+<rect x="69.2009" y="69.2003" width="69.2" height="69.2" fill="#1B0255"/>
+<rect x="207.602" y="69.2003" width="69.2" height="69.2" fill="#4700C9"/>
+<rect width="69.2" height="69.2" fill="#886DFF"/>
+</g>
+<g opacity="0.2">
+<rect x="632.24" width="69.12" height="69.12" fill="#1B0255"/>
+<path d="M701.36 0V69.12H632.24L701.36 0Z" fill="#4700C9"/>
+<rect x="701.362" width="69.12" height="69.12" fill="#886DFF"/>
+<rect x="770.479" width="69.12" height="69.12" fill="#4700C9"/>
+<rect x="770.479" y="69.1196" width="69.12" height="69.12" fill="#886DFF"/>
+<rect x="701.362" y="69.1196" width="69.12" height="69.12" fill="#4700C9"/>
+<rect x="632.24" y="69.1196" width="69.12" height="69.12" fill="#150241"/>
+<rect x="563.118" width="69.12" height="69.12" fill="#150241"/>
+<rect x="494" width="69.12" height="69.12" fill="#482D9E"/>
+<circle cx="528.56" cy="34.56" r="34.56" fill="#1B0255"/>
+<circle cx="528.56" cy="34.5599" r="15.36" fill="#886DFF"/>
+<rect width="69.12" height="69.12" transform="matrix(1 0 0 -1 494.001 138.24)" fill="#1B0255"/>
+<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="494" y="69" width="70" height="70">
+<rect width="69.12" height="69.12" transform="matrix(1 0 0 -1 494.001 138.24)" fill="#1B0255"/>
+</mask>
+<g mask="url(#mask2)">
+<circle r="69.12" transform="matrix(1 0 0 -1 494.004 69.1208)" fill="#4700C9"/>
+</g>
+</g>
+</svg>

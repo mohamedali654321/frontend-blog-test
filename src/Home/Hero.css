@@ -1,0 +1,218 @@
+.Hero{
+    /* background: url("../images/Planes2.png"); */
+    /* background: #1e1d80; */
+    background: #380764;
+    /* background: #520996; */
+    height: 120vh;
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+    
+    
+    
+    @media(max-width: 640px)
+    {
+  
+      height: 990px;
+    }
+    
+    
+  }
+  .HeroGroup{
+    
+    margin: 0px 36px ;
+    padding: 150px 50px;
+    text-align: center;
+   
+    z-index: 1;
+  
+  }
+  .Hero .hero-img{
+  position: relative;
+  margin-left: 20%;
+  margin-top: -140px;
+  display: grid;
+  
+  
+  
+  }
+  
+  .Hero .hero-img .img1{  
+  
+    height: 1000px;
+   opacity: 0;
+   filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.5));
+   animation:bounce  3s forwards infinite ease-in-out alternate-reverse ;
+   /* animation: HeroAnimation 9s forwards  ; */
+
+   
+    
+  }
+  
+  
+  /* .Hero .hero-img .img1:hover{
+    transform: scale(1.1) skew(0deg) translateY(-20px) ;
+     
+  } */
+  
+  
+  @keyframes bounce{
+  0%{
+  transform: translateY(0);
+  opacity: 1;
+  }
+  100%{
+    transform: translateY(-40px) ;
+    opacity: 1;
+  
+  }
+  
+  
+  }
+  
+   .Hero ul{
+       max-width:600px;
+        padding-left:400px;
+        margin: 0;
+         gap:40px;
+        list-style: none;
+        display: flex;
+        opacity: 0;
+        align-items: center;
+        margin-bottom: 0;
+       padding-top:30px;
+       animation: HeroAnimation 5s cubic-bezier(0.2, 0.82, 0.2, 1) forwards ;
+       animation-delay: 1.9s;
+      }
+    
+    .Hero  a{
+          text-decoration:none;
+         font-size:20px;
+         font-weight:600;
+         color:white;
+          transition:.3s cubic-bezier(0.2, 0.82, 0.2, 1);
+         
+     
+      }
+      .Hero  a:hover{
+    
+       transform:scale(1.1)
+      }
+      .Hero .left{
+        
+    
+       
+        border-radius: 8px;
+        top: 0;
+         left: 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         overflow: hidden;
+         border: 1px solid transparent;
+         transition: border .2s ease;
+         box-sizing: border-box;
+         position: relative;
+         width:180px;
+         height:50px;
+       
+        box-shadow: 0 1px 4px rgba(26,26,67,.1);
+        background-color: #8c4bff;
+      color: #fff;
+      transform: perspective(800px);
+    
+        
+    
+        
+        
+       
+     }
+    
+     .Hero  .right{
+        background-color: #fee895;
+        color: #1e1d80;
+    
+    
+        border-radius: 8px;
+        top: 0;
+        left: 0;
+        display: flex;
+         align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border: 1px solid transparent;
+        transition: border .2s ease;
+        box-sizing: border-box;
+         position: relative;
+        width:180px;
+        height:50px;
+       
+        box-shadow: 0 1px 4px rgba(26,26,67,.1);
+        
+      
+        transform: perspective(800px);
+        
+     }
+  
+  
+  
+  .HeroGroup h1{
+    padding-left: 300px;
+    color: white;
+    max-width: 600px;
+    font-size: 50px;
+    line-height: 1.2;
+    top: 200px;
+    
+    opacity: 0;
+    animation: HeroAnimation;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+    
+  }
+  .HeroGroup p {
+   padding-left: 300px;
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.5;
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.8);
+    animation: HeroAnimation 5s cubic-bezier(0.2, 0.82, 0.2, 1) forwards ;
+    animation-delay: 1.5s;
+  }
+  
+  
+  .Hero .mockup{
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  @media(max-width:640){
+    
+  
+    .HeroGroup{
+      padding: 100px 20px;
+    }
+    .Hero h1{
+      font-size: 40px;
+    }
+    .Hero p{
+      font-size: 24px;
+    }
+  }
+  
+  
+  @keyframes HeroAnimation{
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+  }
+  
