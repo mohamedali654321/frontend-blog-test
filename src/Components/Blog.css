@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@700&display=swap');
+
+
 .container{
 padding: 130px 0 0;
 
@@ -21,6 +24,7 @@ padding: 130px 0 0;
     left: 0;
     width: 200px;
     height: 200px;
+    
 
 }
 
@@ -29,6 +33,7 @@ padding: 130px 0 0;
     flex-direction: column-reverse;
     width: 100%;
     height: 100%;
+    
 
 }
 
@@ -36,6 +41,7 @@ padding: 130px 0 0;
     margin-top: 30px;
     display: block;
     max-width: 140px;
+    
 }
 
 .dots .ratio{
@@ -67,7 +73,7 @@ padding: 130px 0 0;
 }
 
 .image .ratio{
-
+    
     position: relative;
     width: 100%;
     padding-bottom: 100%;
@@ -123,17 +129,50 @@ width: 100%;
 
 }
 .innerWrapper .title .label .text{
-     top: -90px;
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Indie Flower', cursive; */
+    /* font-family: 'Life Savers', cursive; */
+
+    
+    font-family: 'Freehand', cursive;
+font-family: 'Life Savers', cursive;
+     top: -50px;
+     left: -20px;
     position: relative;
     display: inline-block;
-    opacity: 1;
+    
     transform: perspective(1000px) translate3d(0px, 0px, 0px);
     will-change: opacity,transform;
     text-align: center;
-    color: #6514a0;
-    font-weight: bolder;
+    color: #8D1CB8;
+    font-weight: 700;
     line-height: 56px;
     font-size: 43px;
+    text-transform: capitalize;
+    
+   
+    
+
+}
+
+ .textLabel{
+    /* display: inline-block;
+    position: relative;
+     animation: text 1.5s linear infinite ; */
+  
+    
+}
+
+ 
+
+
+
+
+
+.tech{
+    font-size: 19px;
+    color: #9f4fd8;
+    font-weight: 600;
 
 }
 
@@ -401,4 +440,101 @@ width: 100%;
     overflow: hidden;
     fill: none;
 
+}
+
+
+.vision{
+
+    position: absolute;
+    right: 0;
+    top: -80px;
+    align-items: flex-end;
+}
+
+
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+
+ 
+
+  .text .h1{
+      background: linear-gradient(to right , darkorange 10%,white 50%, deepskyblue 60%);
+      -webkit-background-size: 200% auto;
+      background-size: 200% auto;
+      background-clip: border-box;
+      color: brown;
+      background-clip: text;
+      -webket-text-fill-color:transparent;
+      display: inline-block;
+      animation: animate 1.5s linear infinite;
+      color: #8D1CB8;
+
+
+  }
+
+  @keyframes animate{
+
+    to{
+        background-position: 200% center;
+    }
+  }
+
+
+
+ 
+.text .blogLabel {
+		color: #fff;
+		font-size: 43px;		
+		text-transform: capitalize;
+		font-weight: 700;
+		
+		background: linear-gradient(to right, #8D1CB8 10%, #25abe8 50%, #57d75b 60%);
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #fff;
+		background-clip: text;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip linear infinite forwards;
+        animation-duration: 10s;
+        animation-delay: 2s;
+		display: inline-block;
+        opacity: 1;
+        
+        
+
+        
+        
+	
+}
+
+@keyframes textclip {
+  
+	to {
+        opacity: 1;
+		background-position: 200% center;
+        
+        
+       
+       
+        
+        
+	}
+}
+
+
+
+
+.text .tech{
+  font-size: 17px;
 }

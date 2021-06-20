@@ -6,14 +6,14 @@ import FilterBar from './FilterBar'
 import './Blog.css'
 import { Link, useHistory, useLocation } from 'react-router-dom'
 export default function Blog() {
-    
+
     const query = new URLSearchParams(useLocation().search);
     const [visible, setVisible] = useState(12);
     const [card, setCard] = useState([]);
     const [locale, setLocale] = useState("en");
     const history = useHistory();
     const BACKEND_URL = "http://54.220.211.123:1335"
-    const endPoint = "http://54.220.211.123:1335/articles?_sort=date:desc" 
+    const endPoint = "http://54.220.211.123:1335/articles?_sort=date:desc"
 
     const showMoreItems = () => {
         setVisible(prevValue =>
@@ -27,14 +27,14 @@ export default function Blog() {
 
 
     useEffect(() => {
-        axios.get("http://54.220.211.123:1335/articles?_sort=publishDate:desc&_locale="+ localStorage.getItem("locale")).
+        axios.get("http://54.220.211.123:1335/articles?_sort=publishDate:desc&_locale=" + localStorage.getItem("locale")).
             then(async res => {
                 await setCard(res.data);
                 console.log(res.data)
 
             })
             .catch(err => console.log(err))
-    }, [ card,localStorage.getItem("locale")]);
+    }, [card, localStorage.getItem("locale")]);
 
 
 
@@ -47,31 +47,41 @@ export default function Blog() {
     return (
         <div className="container" >
             <div className="maxWidth">
-        
+
 
                 <div className="wrapper">
                     <div className="innerWrapper">
-                    {/* <select
-                                name="locales"
-                                id="locales"
-                                onChange={setLang}
-                                value={locale}
-                            >
-                                <option  value="en">English</option>
-                                <option value="ar">Arabic</option>
-                            </select> */}
+
                         <div className="title">
-                           
+
                             <h1 className="label">
-                                <span className="text" >Blog</span>
+                                <div className="text" >
+
+                                <span style={{fontWeight:"600"}} className="blogLabel">LibraryThings<span className="tech">.Tech</span></span>
+
+                             
+                                    {/* <span className="textLabel">
+                                      LibraryThings
+
+                                    </span>
+
+                                 
+                                    <span className="tech">.tech</span> */}
+                                    </div>
+                                <img src="./images/english.png" className="vision" />
+
 
                             </h1>
 
+
+
                         </div>
+
+
 
                     </div>
 
-                    
+
 
                 </div>
                 <div className="triangle">
@@ -87,6 +97,7 @@ export default function Blog() {
                             <div className="ratio">
                                 <img src="/images/triangle.svg" className="Img" />
 
+
                             </div>
 
                         </div>
@@ -94,6 +105,7 @@ export default function Blog() {
                     </div>
 
                 </div>
+
 
             </div>
             <div className="articles">
@@ -118,7 +130,7 @@ export default function Blog() {
                                         <Card
 
                                             image={item.image ? item.image : null}
-                                             tag={item.categories.length >= 0 ? item.categories :null}
+                                            tag={item.categories.length >= 0 ? item.categories : null}
                                             title={item.title}
                                             abstract={item.abstract}
                                             name={item.author}
@@ -140,7 +152,7 @@ export default function Blog() {
                                     </div>
                                     <Link className="buttonLink" onClick={showMoreItems}  >
                                         See more
-                                  <svg
+                                        <svg
                                             className="svgStyle"
                                             viewBox="0 0 11 12"
                                             fill="none"

@@ -17,7 +17,7 @@ const switchText={
 function Language() {
 
     const [checked,setChecked]=useState(false);
-    const [locale, setLocale] = useState("en");
+    const [locale, setLocale] = useState(localStorage.getItem("locale") ? localStorage.getItem("locale") : "en");
     
 
     const history = useHistory();

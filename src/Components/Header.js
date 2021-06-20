@@ -52,7 +52,7 @@ class Header extends React.Component {
     return (
       <div className={this.state.hasScroll ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
-          <a href="/"><img style={{width:"120px" ,height:"80px"}}  src={this.state.hasScroll || document.location.pathname.length === 1 ? '/images/dark22.png' : '/images/light22.png'} className="logo" /></a>
+          <a href="/"><img style={{width:"120px" ,height:"70px"  }}  src={this.state.hasScroll || document.location.pathname.length === 1 ? '/images/kware_light-removebg.png' : '/images/kware_dark-removebg.png'} className="logo" /></a>
 
           <div className="panelBackgroundWrapper">
             <div className="panelBackgroundContainer">

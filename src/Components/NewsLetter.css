@@ -34,7 +34,7 @@
     opacity: .63;
     background: linear-gradient(
         180deg
-        ,#2525c0,rgba(149,111,255,.0001) 141.75%);
+        ,#8D1CB8,rgba(149,111,255,.0001) 141.75%);
         z-index: -1;
         right: 47.42%;
         -webkit-clip-path: polygon(0 0,100% 0,80% 100%,0 100%);
@@ -51,7 +51,7 @@
 
     background: linear-gradient(
         176.25deg
-        ,#4848d7 5.13%,#956fff 96.92%);
+        ,#8D1CB8 5.13%,#956fff 96.92%);
             opacity: .38;
             z-index: -2;
             right: 47.42%;

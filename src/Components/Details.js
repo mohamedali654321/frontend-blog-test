@@ -78,15 +78,19 @@ function Details({ match }) {
 
 
 
-
+console.log(localStorage.getItem("locale") != currentLocale  )
+console.log({currentLocale},{id})
     useEffect(() => {
 
-        if (localStorage.getItem("locale") != currentLocale && locales.length > 0) {
-            axios.get(`http://54.220.211.123:1335/articles?id=${id}&_locale=${convertLocale}`)
+        if (localStorage.getItem("locale") != currentLocale && locales.length > 0 ) {
+            axios.get(`http://54.220.211.123:1335/articles?id=${id}&_locale=${localStorage.getItem("locale")}`)
                 .then(async res => {
 
 
                     await setLocaleData(res.data);
+
+                  
+    
 
 
 
@@ -100,10 +104,11 @@ function Details({ match }) {
         if (localStorage.getItem("locale") == currentLocale && locales.length > 0) {
 
 
-            axios.get(`http://54.220.211.123:1335/articles?slug=${slug}&_locale=${localStorage.getItem("locale")}`)
+            axios.get(`http://54.220.211.123:1335/articles?id=${currentId}&_locale=${localStorage.getItem("locale")}`)
                 .then(async res => {
 
                     await setLocaleData(res.data);
+                   
 
 
 
@@ -117,6 +122,8 @@ function Details({ match }) {
                 .then(async res => {
 
                     await setLocaleData(res.data);
+
+                    
 
 
                 })
@@ -133,6 +140,8 @@ function Details({ match }) {
 
     }, [localeData])
 
+
+    console.log({currentLocale},{currentId},localStorage.getItem("locale"))
 
 
 
@@ -398,7 +407,7 @@ function Details({ match }) {
 
                                                     <p className="auth"> Author: {details.author}</p>
                                                     <p className="translate">Translated by: {details.translator}</p>
-                                                    <p className="date">Published Date: {details.date}</p>
+                                                    <p className="date">Published Date: {details.publishDate}</p>
                                                 </div>
 
                                             </div>
