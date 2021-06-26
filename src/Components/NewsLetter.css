@@ -29,6 +29,13 @@
     z-index: 1;
 }
 
+@media (max-width :450px ) {
+    .banner .wrapper{
+        flex-direction: column;
+    }
+    
+}
+
 .banner .wrapper .gradient1{
     transform: matrix(1,0,0,-1,0,0);
     opacity: .63;
@@ -80,6 +87,8 @@
     margin-bottom: 20px;
     color: #fff;
 }
+
+
 
 .content .descNews{
     font-size: 10px;

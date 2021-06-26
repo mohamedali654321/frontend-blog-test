@@ -55,20 +55,38 @@ export default function Blog() {
                         <div className="title">
 
                             <h1 className="label">
-                                <div className="text" >
 
-                                <span style={{fontWeight:"600"}} className="blogLabel">LibraryThings<span className="tech">.Tech</span></span>
 
-                             
-                                    {/* <span className="textLabel">
-                                      LibraryThings
 
-                                    </span>
+                                <div className="text">
 
-                                 
-                                    <span className="tech">.tech</span> */}
+                                    <div class="liq-content">
+                                        <h2>LibraryThings</h2>
+                                        <h2>LibraryThings</h2>
+
                                     </div>
-                                <img src="./images/english.png" className="vision" />
+
+                                    {/* <svg viewBox="0 0 960 300">
+                                        <symbol id="s-text">
+                                            <text text-anchor="middle" x="50%" y="80%">LibraryThings</text>
+                                        </symbol>
+
+                                        <g className="g-ants">
+                                            <use href="#s-text" className="text-copy"></use>
+                                            <use href="#s-text" className="text-copy"></use>
+                                            <use href="#s-text" className="text-copy"></use>
+                                            <use href="#s-text" className="text-copy"></use>
+                                            <use href="#s-text" className="text-copy"></use>
+                                        </g>
+                                    </svg> */}
+
+                                </div>
+
+
+
+
+
+
 
 
                             </h1>
@@ -84,7 +102,7 @@ export default function Blog() {
 
 
                 </div>
-                <div className="triangle">
+                <div className="triangle" style={{ top: "-150px" }}>
                     <div className="triangle-wrapper">
                         <div className="dots">
                             <div className="ratio">

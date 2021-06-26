@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Details.css'
 import { Link } from 'react-router-dom'
+import { hot } from 'react-hot-loader/root';
 import axios from 'axios'
 import NewsLetterBanner from './NewsLetterBanner';
 import MiniCard from './MiniCard';
@@ -49,21 +50,6 @@ function Details({ match }) {
                 })
 
 
-
-                // setLocales(res.data[0].localizations);
-                // setConvertLocale(locales[0].locale)
-                // setId(locales[0].id)
-
-                // if(res.data[0].localizations.length > 0){
-                //     await setLocales(res.data[0].localizations[0] !== null ? res.data[0].localizations[0] : null);
-                //     await setId(res.data[0].localizations[0].id !== null ? res.data[0].localizations[0].id : null );
-                //     await setConvertLocale(res.data[0].localizations[0].locale  !== null ? res.data[0].localizations[0].locale : null)
-
-                // }
-
-
-
-
             })
             .catch(err => console.log(err));
 
@@ -76,7 +62,7 @@ function Details({ match }) {
 
 
 
-
+console.log({details})
 
 console.log(localStorage.getItem("locale") != currentLocale  )
 console.log({currentLocale},{id})
@@ -86,14 +72,12 @@ console.log({currentLocale},{id})
             axios.get(`http://54.220.211.123:1335/articles?id=${id}&_locale=${localStorage.getItem("locale")}`)
                 .then(async res => {
 
-
-                    await setLocaleData(res.data);
-
-                  
+                    if(res)
+                      {
+                        await setLocaleData(res.data);
+                      }
     
-
-
-
+                   
                 })
                 .catch(err => console.log(err))
 
@@ -105,13 +89,13 @@ console.log({currentLocale},{id})
 
 
             axios.get(`http://54.220.211.123:1335/articles?id=${currentId}&_locale=${localStorage.getItem("locale")}`)
-                .then(async res => {
-
-                    await setLocaleData(res.data);
-                   
-
-
-
+                .then( async res => {
+                    if(res)
+                    {
+                      await setLocaleData(res.data);
+                    }
+                  
+    
                 })
                 .catch(err => console.log(err));
         }
@@ -120,12 +104,15 @@ console.log({currentLocale},{id})
 
             axios.get(`http://54.220.211.123:1335/articles?id=${currentId}&_locale=${currentLocale}`)
                 .then(async res => {
+                      if(res)
+                      {
+                        await setLocaleData(res.data);
+                      }
+                  
 
-                    await setLocaleData(res.data);
-
-                    
-
-
+                 
+    
+                
                 })
                 .catch(err => console.log(err));
 
@@ -140,16 +127,15 @@ console.log({currentLocale},{id})
 
     }, [localeData])
 
-
-    console.log({currentLocale},{currentId},localStorage.getItem("locale"))
-
+console.log({localeData})
 
 
     let keywords = [];
 
     details.map(details => {
-        if (details.keywords.length > 0) {
+        if (details.keywords && details.keywords.length > 0) {
             details.keywords.map(item => {
+                if(item.word !== null)
 
                 keywords.push(item.word.toLocaleLowerCase())
             });
@@ -537,4 +523,4 @@ console.log({currentLocale},{id})
     )
 }
 
-export default Details
+export default hot(Details) ;

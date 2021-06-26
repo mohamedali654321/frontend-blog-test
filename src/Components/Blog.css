@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@700&display=swap');
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .container{
 padding: 130px 0 0;
@@ -36,6 +36,7 @@ padding: 130px 0 0;
     
 
 }
+
 
 .triangle-wrapper .dots{
     margin-top: 30px;
@@ -129,25 +130,8 @@ width: 100%;
 
 }
 .innerWrapper .title .label .text{
-    /* font-family: 'Shadows Into Light', cursive; */
-    /* font-family: 'Indie Flower', cursive; */
-    /* font-family: 'Life Savers', cursive; */
-
-    
-    font-family: 'Freehand', cursive;
-font-family: 'Life Savers', cursive;
-     top: -50px;
-     left: -20px;
-    position: relative;
-    display: inline-block;
-    
-    transform: perspective(1000px) translate3d(0px, 0px, 0px);
-    will-change: opacity,transform;
-    text-align: center;
-    color: #8D1CB8;
-    font-weight: 700;
-    line-height: 56px;
-    font-size: 43px;
+  top: -100px;
+  left: -10px;
     text-transform: capitalize;
     
    
@@ -155,13 +139,6 @@ font-family: 'Life Savers', cursive;
 
 }
 
- .textLabel{
-    /* display: inline-block;
-    position: relative;
-     animation: text 1.5s linear infinite ; */
-  
-    
-}
 
  
 
@@ -289,9 +266,29 @@ font-family: 'Life Savers', cursive;
     animation-duration: 1s;
     animation-fill-mode: forwards ;
     animation-delay: .5s;
+
+
+    
     
 
 }
+
+
+@media (max-width:450) {
+    .articles  .cardsGrid{
+        grid-template-columns: repeat(1,minmax(25%,1fr));
+       
+    }
+    
+}
+
+@media (max-width:768) {
+    .articles .cardsGrid{
+        grid-template-columns: repeat(2,minmax(25%,1fr));
+    }
+    
+}
+
 
 @keyframes CardAnimation{
     0%{
@@ -465,76 +462,128 @@ font-family: 'Life Savers', cursive;
 
  
 
-  .text .h1{
-      background: linear-gradient(to right , darkorange 10%,white 50%, deepskyblue 60%);
-      -webkit-background-size: 200% auto;
-      background-size: 200% auto;
-      background-clip: border-box;
-      color: brown;
-      background-clip: text;
-      -webket-text-fill-color:transparent;
-      display: inline-block;
-      animation: animate 1.5s linear infinite;
-      color: #8D1CB8;
 
 
-  }
 
-  @keyframes animate{
 
-    to{
-        background-position: 200% center;
+
+
+
+
+
+
+
+.text svg {
+   
+    display: block;
+    font: 4em 'Montserrat';
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+
+    
+}
+
+.text .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #8D1CB8;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #8D1CB8;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #8D1CB8;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #8D1CB8;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #ae28e4;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+
+
+.text .liq-content{
+   
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-left: 450px;
+    top: -50px;
+    
+    
+    
+
+}
+
+.text .liq-content h2{
+    position: absolute;
+    color:#fff;
+    font-size: 1.7em;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    
+
+}
+
+
+
+.liq-content h2:nth-child(1){
+    color:#fff;
+-webkit-text-stroke: 2px #8D1CB8;
+filter: brightness(130%);
+
+
+}
+
+.liq-content h2:nth-child(1):hover{
+    -webkit-text-stroke: 2px #b73ee7;
+    filter: brightness(130%);
+   
+}
+.liq-content h2:nth-child(2){
+
+    color:#8D1CB8 ;
+    animation: liquid 2s ease-in-out infinite;
+
+}
+
+.liq-content h2:nth-child(2):hover{
+    color:#b73ee7 ;
+    filter: brightness(130%);
+    
+
+}
+@keyframes liquid{
+
+
+    0%,100%{
+        clip-path: polygon(0% 45%,15% 44%,32% 50%, 54% 60% ,71% 61% , 84% 59%,100% 52%,100% 100% , 0% 100% ) ;
     }
-  }
+    50%{
 
-
-
- 
-.text .blogLabel {
-		color: #fff;
-		font-size: 43px;		
-		text-transform: capitalize;
-		font-weight: 700;
-		
-		background: linear-gradient(to right, #8D1CB8 10%, #25abe8 50%, #57d75b 60%);
-		background-size: auto auto;
-		background-clip: border-box;
-		background-size: 200% auto;
-		color: #fff;
-		background-clip: text;
-		text-fill-color: transparent;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: textclip linear infinite forwards;
-        animation-duration: 10s;
-        animation-delay: 2s;
-		display: inline-block;
-        opacity: 1;
-        
-        
-
-        
-        
-	
-}
-
-@keyframes textclip {
-  
-	to {
-        opacity: 1;
-		background-position: 200% center;
-        
-        
-       
-       
-        
-        
-	}
-}
-
-
-
-
-.text .tech{
-  font-size: 17px;
+        clip-path: polygon(0% 60%, 61% 65% ,34% 66%,51% 62%,67% 50%,84% 45%,100% 46%,100% 100%, 0% 100%);
+    }
 }

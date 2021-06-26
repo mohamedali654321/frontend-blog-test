@@ -8,8 +8,13 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    
+   
+    
 
 }
+
+ 
 
 .filterBar .selectWrapper{
     justify-content: flex-start;
@@ -53,6 +58,10 @@
     position: relative;
     display: inline-block;
     transform: translateZ(900px);
+}
+
+@media (max-width: 450px){
+    
 }
 
 .button .shadow{

@@ -78,6 +78,7 @@
 
 
 
+
 .HeaderGroup{
     margin-top: -50px;
     display: flex;
@@ -184,9 +185,7 @@ height: 55px;
 .Header{
     padding: 15px 0;
 }
-.HeaderGroup {
-    grid-template-columns: repeat(4,auto);
-}
+
 
 .Header a:nth-child(4){
     display: none;
@@ -497,3 +496,6 @@ height: 55px;
     
   }
   
+  @media (max-width: 450px){
+     
+  }
